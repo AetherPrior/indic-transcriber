@@ -1,2 +1,2 @@
 #!/bin/sh
-youtube-dl -f 249 $1 --no-playlist --write-sub --sub-format srt
+youtube-dl -f worstaudio $1 --write-sub --sub-format srt
