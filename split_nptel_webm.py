@@ -42,7 +42,7 @@ def convert_to_wav(dir):
             if(sub.split('.')[-1] == 'webm'):
                 name = sub.split('.')[0]
                 subprocess.Popen(
-                    ['ffmpeg', '-i', f'./nptel/DSA/\'{sub}\'', '-c:a pcm_f32le', f'.nptel/DSA/\'{name}\'.wav'])
+                    ['ffmpeg', '-i', f'\"./nptel/DSA/{sub}\"', '-c:a', 'pcm_f32le', f'\".nptel/DSA/{name}\".wav'])
 
 
 def get_audio_from_subs(stampslist):
